@@ -1,3 +1,5 @@
+import 'dotenv/config';
+require('dotenv').config();
 import express from "express";
 
 const app = express();
@@ -54,7 +56,7 @@ app.delete("/cric/:id", (req, res) => {
   return res.status(200).send("deleted");
 });
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server is Runnig at Port: ${port}`);
 });
