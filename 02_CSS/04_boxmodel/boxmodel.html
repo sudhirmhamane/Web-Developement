@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Box Model</title>
+</head>
+<body>
+    <h1>Box Model Example Demo</h1>
+
+    <h2>Content-Box (Default)</h2>
+
+    <div class= "box-model-demo content-box">
+        <p>This is a content-box element </p>
+        <p>Width:300px+40px(padding)+10px(border)=350px</p>
+        <p>height:200px+40px(padding)+10px(border)=250px</p>
+    </div>
+
+    <h2>Border-Box</h2>
+    <div class= "box-model-demo border-box">
+        <p>This is a border-box element </p>
+        <p>Width:300px(including padding and border)</p>
+        <p>height:200px(including padding and border)</p>
+    </div>
+
+    <h2>Inline vs Block Element</h2>
+    <p>
+        This is a paragraph with an <span class="inline-element">Inside inline element, only take up as much width as necessary and allow other elements next to them.</span>
+    </p>
+
+    <div class="block-example">
+        this is a block level element,it take up full width avilable and 
+        create new line before it and after it. 
+    </div>
+
+    <h2>Box Model Components</h2>
+    <p>The box model cosists of:</p>
+    <ul>
+        <li>
+            <span class="highlight">content</span>: The actual content of box,
+            where text and image appears.
+        </li>
+        <li>
+            <span class="highlight">padding</span>: Clear the area inside around the content(inside the border)
+        </li>
+        <li>
+            <span class="highlight">Border</span>: The border goes around the padding and content.
+        </li>
+        <li>
+            <span class="highlight">Margin</span>: Clear an area outsuide the border.
+        </li>
+    </ul>
+
+</body>
+</html>

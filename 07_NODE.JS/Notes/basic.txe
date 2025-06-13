@@ -1,0 +1,34 @@
+const fs = require("fs"); 
+fs ka full form hai File System.
+
+Ye Node.js ka built-in module hai.
+
+Jab tu require("fs") likhta hai, tu fs module ko apne code me import kar raha hai — matlab tu file system se related kaam kar sakta hai, jaise:
+
+File banana (fs.writeFile)
+
+File padna (fs.readFile)
+
+File delete karna (fs.unlink)
+
+Directory banana, padna, check karna, etc.
+
+
+-----------------------
+
+
+process.argv kya hai?
+process.argv ek array hota hai jo Node.js ke command-line arguments ko store karta hai.
+
+Isme:
+
+process.argv[0] hota hai: node ka path
+
+process.argv[1] hota hai: script file ka path
+
+process.argv[2] se shuru hote hain actual arguments jo tu command line me deta hai
+
+
+------------------------
+
+

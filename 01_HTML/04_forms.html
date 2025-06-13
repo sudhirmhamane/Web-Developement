@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Forms in the HTML -->
+
+    <h2>Login Form</h2>
+    <!-- <form> <input type="password">Enter the password</form> -->
+
+    <!-- forming a email -->
+    <form>
+        <label for="email">email : 
+            <input type="email" name="email">
+        </label>
+
+        <!-- forming a password -->
+        <label for="password">password : 
+            <input type="text" name="password">
+        </label>
+
+        <!-- submit button -->
+        <button type="submit">submit</button>
+
+    </form>
+
+    <br>
+
+    <div>
+        <h2>Learning the Forms</h2>
+        <form>
+            <label for="email">
+                Email:
+                <input type="email" name="email">
+            </label>
+            <button type="submit">Submit Here</button>
+        </form>
+    </div>
+
+    <br>
+
+    <div>
+        <h2>Learning Textarea</h2>
+        <form>
+            <label for="story"> tell yours Story: </label><br>
+            <textarea name="story">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, error.</textarea>
+        </form>
+    </div>
+
+    <br>
+
+    <div>
+        <!-- this is for the checkBox,radio,range -->
+        <h2>Check Boxes</h2>
+        <form>
+            <label for="Games">
+               Criket : <input type="checkbox" name="Games" id="">
+            </label>
+            <label for="Games">
+               Kabbadi : <input type="radio" name="Games" id="">
+            </label>
+            <label for="Games">
+               Kho-Kho : <input type="range" name="Games" id="">
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <br>
+    
+    <div>
+        <h2>Select Multiple Choose</h2>
+        <form>
+            <label for="Games">
+                Select yours fav Game:
+                <select name="Games" id=""> 
+                    <option>Criket</option>
+                    <option>Kabbadi</option>
+                    <option>Kho-Kho</option>
+                    <option>Ligori</option>
+                </select>
+            </label>
+        </form>
+    </div>
+</body>
+</html>
