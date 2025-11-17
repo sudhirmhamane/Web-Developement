@@ -1,0 +1,259 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #212121;
+    color: aliceblue;
+}
+
+.nav-container{
+    margin-bottom: 40px;
+
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+.nav1{
+    /* border: 2px solid rgb(251, 255, 0); */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav1 ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav1 li {
+    display: inline;
+
+}
+
+.nav1 a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    /* background-color: magenta; */
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+}
+
+.nav1 .login-btn{
+    border: none;
+    color: #fff;
+    background-color: #0d3d04;
+    border-radius: 10px;
+    padding: 7px 14px;
+    font-size: medium;
+    cursor: pointer;
+    width: 100px;
+}
+
+.nav1 .login-btn:hover{
+    background-color: #04ff00;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+}
+
+.nav1 a::after{
+    content: "";
+    position: absolute;
+    height: 2.4px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+
+}
+
+.nav1 a:hover::after{
+    transform: scaleX(0.7);
+}
+
+/* nav2 bar my Practice */
+
+/* .nav2{
+    
+    background-color: rgb(133, 0, 178);
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.nav2 ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.nav2 .login-btn{
+    border: none;
+    color: black;
+    border-radius: 5px;
+    padding: 7px 14px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.nav2 a{
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline;
+    padding: 5px 10px;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(246, 15, 15, 0.1); 
+} 
+*/
+
+/* 2nd nav by hitesh sir */
+
+.nav2{
+    background-color: orange;
+    width: 110px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav2 ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    display: inline-block;
+}
+
+.nav2 li{
+    margin-bottom: 10px;
+}
+
+.nav2 a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding:10px;
+    width: 100%;
+    display: block;
+}
+
+.nav2 .dropdown-content{
+    display: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 11px;
+}
+
+.nav2 .dropdown:hover .dropdown-content{
+    display: block;
+    position:absolute;
+    background-color: #06f002d8;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+.nav2 a:hover{
+    background-color: #212121;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.nav2 .login-btn{
+    border: none;
+    color: black;
+    background-color: rgb(25, 0, 255);
+    border-radius: 10px;
+    padding: 7px 14px;
+    font-size: medium;
+    cursor: pointer;
+    width: 100px;
+}
+
+.nav2 .login-btn:hover{
+    background-color: #04ff00;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/* Nav3 styling */
+
+.nav3{
+    background-color: #06f002d8;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.nav3 ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav3 a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+.nav3 .dropdown-content{
+    display: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 11px;
+}
+
+.nav3 .dropdown:hover .dropdown-content{
+    display: block;
+    position:absolute;
+    background-color: #06f002d8;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+.nav3 a:hover{
+    background-color: #0d3d04;
+    border-radius: 6px;
+    /* align-items: center; */
+}
+
+.nav3 .login-btn{
+    border: none;
+    color: #fff;
+    background-color: #0d3d04;
+    border-radius: 10px;
+    padding: 7px 14px;
+    font-size: medium;
+    cursor: pointer;
+    width: 100px;
+}
+
+.nav3 .login-btn:hover{
+    background-color: #04ff00;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+}

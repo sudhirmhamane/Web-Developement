@@ -1,0 +1,183 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 12px;
+  }
+  
+  .company-name {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+  }
+  
+  .navbar-menu {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-left: 20px;
+  }
+  
+  .navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: #ff6347;
+  }
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel img {
+    height: 290px; /* Adjust this height as needed */
+    object-fit: cover;
+}
+
+
+.container{
+    /* background-color: #8a2be2; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* height: 100%; */
+    margin-top: 5px;
+    padding-top: 5px;
+    
+}
+
+
+.card {
+    text-align: center;
+    background-color: #212121;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 20px solid rgb(255, 255, 255);
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.9);
+    margin-bottom: 5px;
+  }
+
+img{
+    /* width: 400px;
+    /* height: 400px;
+    object-fit: contain; 
+    font-size: 10px; */
+
+    width: 280px;
+    height: 220px;
+    background-size: cover;  /* Or use contain, depending on your needs */
+    background-position: center;
+    object-fit: contain;
+}
+
+
+h2 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+
+p {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn {
+   /* padding: 17px; */
+   margin-top: 6px;
+   padding: 8px;
+   font-size: 15px;
+   border-radius: 10px;
+   color: #000;
+   border: none;
+   background-color: #cccc00;
+   box-shadow: 0 4px 6px rgba(78, 64, 64, 0.9);
+   cursor: pointer;
+
+}
+
+.btn:hover{
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+}
+
+.alink {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* White text */
+    text-align: center;
+    font-size: 14px;
+    padding: 2px;
+} 
+
+footer p{
+    margin-top: 5px;
+}
+
+@media (max-width: 325px) {
+    /* Adjust carousel image size */
+    .my-carousel img {
+        height: 250px; /* Make the images smaller */
+    }
+
+    /* Adjust button size */
+    .btn {
+        font-size: 12px; /* Smaller text for buttons */
+        padding: 8px 12px; /* Smaller padding for buttons */
+    }
+
+    /* Adjust the overall layout */
+    body, html {
+        padding: 10px; /* Add padding so content isn't touching the screen edges */
+    }
+
+    /* Adjust carousel controls */
+    .carousel-control-prev, .carousel-control-next {
+        display: none; /* Hide carousel navigation arrows for very small screens */
+    }
+}
